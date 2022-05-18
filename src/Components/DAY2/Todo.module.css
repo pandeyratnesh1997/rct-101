@@ -1,0 +1,13 @@
+.todoInput{
+    display: flex;
+    margin: auto;
+    
+
+}
+.striked{
+    text-decoration: line-through;
+}
+.cont{
+    text-align: center;
+    display: flex;
+}

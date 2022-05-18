@@ -1,5 +1,6 @@
 
 import './App.css';
+import Todo from './Components/DAY2/Todo';
 import {Navbar} from './Components/Navbar/Navbar'
 import StaticCard from './Components/StaticCard/StaticCard';
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <StaticCard/>
+      <Todo/>
     </div>
   );
 }
