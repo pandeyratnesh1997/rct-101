@@ -1,0 +1,26 @@
+.cont{
+    width: 450px;
+    height : 300px;
+    border : 1px solid black;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.topDiv{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+.logo{
+    height : 40px;
+    width : 40px;
+    margin-top: 20px;
+}
+.btn{
+    color:white;
+    background-color: black;
+    font-size: larger;
+    margin : 10px;
+}
+.text{
+    margin:10px
+}
