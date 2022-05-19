@@ -16,7 +16,7 @@ function App() {
       <h1>Day2 assignment</h1>
      
       <Todo/>
-      <Counter/>
+      <Counter value={0}/>
       <hr/>
       <h1>Day3 Assignment</h1>
       <PaymentCard/>
