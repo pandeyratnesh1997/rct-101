@@ -1,13 +1,43 @@
-.todoInput{
-    display: flex;
-    margin: auto;
-    
 
-}
 .striked{
     text-decoration: line-through;
+    
+    
 }
 .cont{
-    text-align: center;
+    /* text-align: center; */
     display: flex;
+    width : 600px;
+}
+.todoInput{
+    
+    height : 50px;
+    font-size: xx-large;
+    border-radius: 10px;
+    background-color: rgb(255,255,254);
+}
+.add{
+    height : 50px;
+    font-size: xx-large;
+    width: 50px;
+    margin : 20px;
+}
+.todoItem{
+    display: flex;
+    height : 50px;
+    font-size: xx-large;
+    border-radius: 10px;
+    background-color: rgb(255,255,254);
+    padding: 10px;
+    justify-content: space-between;
+    margin-bottom : 10px;
+
+}
+.del{
+    margin-left: 20px;
+    height : 50px;
+}
+.radioBtn{
+    height : 50px;
+    width : 50px;
 }

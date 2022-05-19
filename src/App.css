@@ -1,0 +1,11 @@
+.todocont{
+    display: flex;
+    margin: 52px;
+    /* width: 80%; */
+    background-color: rgb(206,206,206);
+    height: auto;
+    width: 60%;
+    padding: 80px;
+    
+
+}

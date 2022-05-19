@@ -1,5 +1,6 @@
 
 import './App.css';
+
 import Todo from './Components/DAY2/Todo';
 import {Navbar} from './Components/DAY1/Navbar/Navbar'
 import StaticCard from './Components/DAY1/StaticCard/StaticCard';
@@ -14,8 +15,12 @@ function App() {
       <StaticCard/>
       <hr/>
       <h1>Day2 assignment</h1>
+     <div className='todocont'>
+     <Todo/>
+     </div>
      
-      <Todo/>
+    
+     
       <Counter value={0}/>
       <hr/>
       <h1>Day3 Assignment</h1>

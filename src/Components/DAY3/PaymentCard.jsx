@@ -10,7 +10,7 @@ const PaymentCard = () => {
         subheading : "Pay",
         device : "Desktop - Mobile",
         bgcolor : "orange",
-        id : Date.now()
+        id : 2
     
     },
     {
@@ -20,7 +20,7 @@ const PaymentCard = () => {
         subheading : "Payment",
         device : "MacOs - Mobile",
          bgcolor : "rgb(244,244,245)",
-         id : Date.now()
+         id : 1
 
     }
 

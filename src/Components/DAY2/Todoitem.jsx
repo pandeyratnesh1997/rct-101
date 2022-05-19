@@ -4,16 +4,17 @@ import styles from './Todo.module.css';
 export const Todoitem = ({item,onDelete})=>{
     const [status, setStatus] = useState(item.status);
     return(
-    <div className={styles.todoInput && styles.cont }>
-            <div>
-                <input type="checkbox" checked={status} onChange={(e)=>{
+    <div className={styles.todoItem}  >
+            
+                <input type="radio" className={styles.radioBtn} checked={status} onChange={(e)=>{
                     setStatus(e.target.checked);
                     console.log(e);
                 }}/>
-            </div>
-        <div className={status ? styles.striked : ""}
+            
+        <div className={status ? styles.striked : ""} 
+        
          key={item.id}>{item.value}</div>
-        <button onClick={()=>onDelete(item.id)}>Delete</button>
+        <button className={styles.del} onClick={()=>onDelete(item.id)}>Delete</button>
     </div>
     )
 }

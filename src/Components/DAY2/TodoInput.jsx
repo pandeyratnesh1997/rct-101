@@ -10,10 +10,10 @@ import {Todoitem} from './Todoitem'
      }
      return(
          <div>
-             <input value={value} onChange={(e)=>setValue(e.target.value)}  placeholder="Enter Todo"/>
-             <button onClick={()=>{setTodo([...todo,{id : Date.now() ,value : value, status : false}])
+             <input className={styles.todoInput} value={value} onChange={(e)=>setValue(e.target.value)}  placeholder="Write Something"/>
+             <button className={styles.add} onClick={()=>{setTodo([...todo,{id : Date.now() ,value : value, status : false}])
                 setValue("");
-             }}>Add</button>
+             }}>+</button>
 
              {todo.map((item)=>{
                  return(
