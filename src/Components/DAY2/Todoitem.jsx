@@ -6,7 +6,8 @@ export const Todoitem = ({item,onDelete})=>{
     return(
     <div className={styles.todoItem}  >
             
-                <input type="radio" className={styles.radioBtn} checked={status} onChange={(e)=>{
+                <input type="radio" className={styles.radioBtn} checked={status}
+                 onChange={(e)=>{
                     setStatus(e.target.checked);
                     console.log(e);
                 }}/>
