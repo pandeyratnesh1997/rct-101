@@ -7,6 +7,7 @@ import StaticCard from './Components/DAY1/StaticCard/StaticCard';
 import Counter from './Components/DAY2/Counter';
 import PaymentCard from './Components/DAY3/PaymentCard';
 import Todo from './Components/Day5UseEffect1/Todo';
+import ReactForm from './Components/Forms_Event_useRef/ReactForm';
 function App() {
   return (
     <div className="App">
@@ -27,7 +28,8 @@ function App() {
       <h1>Day3 Assignment</h1>
       <PaymentCard/>
      <h1>DAY5 UseEffect-1 assignment</h1>
-      <Todo/>
+      {/* <Todo/> */}
+      <ReactForm/>
 
     </div>
   );

@@ -1,0 +1,35 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "username": "Ratnesh",
+      "age": 25,
+      "address": "40, biplabi barin ghosh sarani",
+      "department": "tech",
+      "salary": 25000,
+      "marital_status": false
+    },
+    {
+      "username": "ratnesh",
+      "age": "30",
+      "address": "kolkata",
+      "department": "",
+      "salary": "",
+      "marital_status": "",
+      "": "hr",
+      "email": "3",
+      "id": 2
+    },
+    {
+      "username": "ratnesh",
+      "age": "30",
+      "address": "kolkata",
+      "department": "",
+      "salary": "456",
+      "marital_status": "",
+      "": "hr",
+      "email": "3",
+      "id": 3
+    }
+  ]
+}
