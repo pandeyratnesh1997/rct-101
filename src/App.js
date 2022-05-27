@@ -8,6 +8,7 @@ import Counter from './Components/DAY2/Counter';
 import PaymentCard from './Components/DAY3/PaymentCard';
 import Todo from './Components/Day5UseEffect1/Todo';
 import ReactForm from './Components/Forms_Event_useRef/ReactForm';
+import Timer from './Components/useEffect-2_Timer/Timer';
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,7 @@ function App() {
       <PaymentCard/>
      <h1>DAY5 UseEffect-1 assignment</h1>
       {/* <Todo/> */}
+      <Timer/>
       <ReactForm/>
 
     </div>
