@@ -1,5 +1,6 @@
 
 import './App.css';
+import Navigationbar from './Components/ContextApi/Navigationbar';
 
 // import Todo from './Components/DAY2/Todo';
 import {Navbar} from './Components/DAY1/Navbar/Navbar'
@@ -9,6 +10,9 @@ import PaymentCard from './Components/DAY3/PaymentCard';
 import Todo from './Components/Day5UseEffect1/Todo';
 import ReactForm from './Components/Forms_Event_useRef/ReactForm';
 import Timer from './Components/useEffect-2_Timer/Timer';
+import { AuthProvider } from './Context/AuthContext';
+
+
 function App() {
   return (
     <div className="App">
@@ -30,8 +34,11 @@ function App() {
       <PaymentCard/>
      <h1>DAY5 UseEffect-1 assignment</h1>
       {/* <Todo/> */}
-      <Timer/>
+      {/* <Timer/> */}
       <ReactForm/>
+      <AuthProvider>
+        <Navigationbar/>
+      </AuthProvider>
 
     </div>
   );

@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import ShowData from './ShowData'
 const ReactForm = () => {
     const [form,setForm] = useState({
        username : "",
@@ -7,20 +8,16 @@ const ReactForm = () => {
        address : "",
        department : "",
        salary : "",
-       marital_status :"",
+       
 
     })
     const handleChange = (e)=>{
-       const {name ,value,type, checked,files} = e.target
+        console.log(e)
+       const {name ,value,type, checked} = e.target
         if(type=="checkbox"){
             setForm({...form, [name] : checked})
         }
-        else if(type==="file"){
-            setForm({
-                ...form,
-                [name] : files,
-            });
-        }
+        
         else{
             setForm({
                 ...form,
@@ -34,11 +31,21 @@ const handleSubmit =  (e)=>{
     const saveData = async ()=>{
       let res = await  axios.post('http://localhost:8080/data',form)
       let data = res.data;
-      console.log(data)
+    //   console.log(data)
     }
-    saveData()
-    
+    saveData();
+  
 }
+useEffect(()=>{
+    const showData  = async()=>{
+        let res = await axios.get('http://localhost:8080/data');
+        let data = res.data;
+        console.log(data)
+    }
+    showData()
+},[])
+
+
 
   return (
     <div><h2>ReactForm</h2>
@@ -55,7 +62,7 @@ const handleSubmit =  (e)=>{
             <label>Address :</label>
             <input type="text" value={form.address} name="address" onChange={handleChange}/>
         </div>
-        <select value={form.department} onChange={handleChange}>
+        <select value={form.department} name="department" onChange={handleChange}>
             <option value="operation">Operation</option>
             <option value="tech">Tech</option>
             <option value="csbt">CSBT</option>
@@ -66,14 +73,14 @@ const handleSubmit =  (e)=>{
             <input type="number" value={form.salary} name="salary" onChange={handleChange}/>
         </div>
         <div>
-            <label>Maritaial Status :</label>git
-            <input type="checkbox" />
+            <label>Marital Status :</label>
+            <input type="checkbox" name='maritalStatus' value={form.maritalStatus} onChange={handleChange}/>
         </div>
 
         <button type='submit'>submit</button>
     </form>
 
-
+        <ShowData form={form}/>
 
     </div>
   )

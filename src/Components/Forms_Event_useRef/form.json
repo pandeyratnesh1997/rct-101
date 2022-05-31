@@ -7,28 +7,24 @@
       "address": "40, biplabi barin ghosh sarani",
       "department": "tech",
       "salary": 25000,
-      "marital_status": false
+      "maritalStatus": false
     },
     {
-      "username": "ratnesh",
-      "age": "30",
-      "address": "kolkata",
-      "department": "",
-      "salary": "",
-      "marital_status": "",
-      "": "hr",
-      "email": "3",
+      "username": "priya",
+      "age": "25",
+      "address": "PATNA",
+      "department": "csbt",
+      "salary": "12000",
+      "maritalStatus": true,
       "id": 2
     },
     {
-      "username": "ratnesh",
-      "age": "30",
-      "address": "kolkata",
-      "department": "",
-      "salary": "456",
-      "marital_status": "",
-      "": "hr",
-      "email": "3",
+      "username": "ritu",
+      "age": "20",
+      "address": "jaipur",
+      "department": "operation",
+      "salary": "120000",
+      "maritalStatus": false,
       "id": 3
     }
   ]
