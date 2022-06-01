@@ -1,6 +1,7 @@
 
 import './App.css';
 import Navigationbar from './Components/ContextApi/Navigationbar';
+import ToggleMode from './Components/ContextApi/ToggleMode';
 
 // import Todo from './Components/DAY2/Todo';
 import {Navbar} from './Components/DAY1/Navbar/Navbar'
@@ -39,6 +40,7 @@ function App() {
       <AuthProvider>
         <Navigationbar/>
       </AuthProvider>
+      <ToggleMode/>
 
     </div>
   );

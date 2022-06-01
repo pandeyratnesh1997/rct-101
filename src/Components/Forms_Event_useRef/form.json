@@ -26,6 +26,34 @@
       "salary": "120000",
       "maritalStatus": false,
       "id": 3
+    },
+    {
+      "username": "preeti",
+      "age": "19",
+      "address": "delhi",
+      "department": "hr",
+      "salary": "1200",
+      "maritalStatus": true,
+      "id": 4
+    },
+    {
+      "username": "priyanka",
+      "age": "30",
+      "address": "gorugram",
+      "department": "tech",
+      "salary": "25000",
+      "maritalStatus": true,
+      "id": 5
+    },
+    {
+      "username": "ratneuy",
+      "age": "32",
+      "address": "kolkata",
+      "department": "csbt",
+      "salary": "50000",
+      "maritalStatus": true,
+      "id": 6
     }
+    
   ]
 }

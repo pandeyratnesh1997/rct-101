@@ -11,6 +11,8 @@ const ReactForm = () => {
        
 
     })
+    const [showdata,setShowdata] = useState([])
+    
     const handleChange = (e)=>{
         console.log(e)
        const {name ,value,type, checked} = e.target
@@ -30,21 +32,28 @@ const handleSubmit =  (e)=>{
     e.preventDefault();
     const saveData = async ()=>{
       let res = await  axios.post('http://localhost:8080/data',form)
-      let data = res.data;
+    //   let data = res.data;
     //   console.log(data)
+        let response = axios.get('http://localhost:8080/data');
+        let data = response.json();
+        // setShowdata(data);
     }
     saveData();
+    fetchData()
   
 }
+const fetchData  = async()=>{
+    let res = await axios.get('http://localhost:8080/data');
+    let data = res.data;
+    setShowdata(data)
+    console.log(data)
+}
 useEffect(()=>{
-    const showData  = async()=>{
-        let res = await axios.get('http://localhost:8080/data');
-        let data = res.data;
-        console.log(data)
-    }
-    showData()
-},[])
-
+    
+    
+  fetchData()
+  },[])
+    console.log(showdata)
 
 
   return (
@@ -79,8 +88,7 @@ useEffect(()=>{
 
         <button type='submit'>submit</button>
     </form>
-
-        <ShowData form={form}/>
+    <ShowData showdata={showdata} setShowdata={setShowdata}/>
 
     </div>
   )
